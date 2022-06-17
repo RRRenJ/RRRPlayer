@@ -10,6 +10,12 @@ import UIKit
 @main
 class RPAppDelegate: UIResponder, UIApplicationDelegate {
 
+    //MARK: - property public
+    
+    
+    
+    //MARK: - property private
+    
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -22,4 +28,3 @@ class RPAppDelegate: UIResponder, UIApplicationDelegate {
 
     
 }
-

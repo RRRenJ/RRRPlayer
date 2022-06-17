@@ -10,5 +10,7 @@ target 'RRRPlayer' do
  pod "PLPlayerKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec'
  #真机
  #pod 'PLPlayerKit'
+ 
+ pod 'KTVHTTPCache'
 
 end

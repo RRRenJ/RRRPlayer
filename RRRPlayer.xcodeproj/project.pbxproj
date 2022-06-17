@@ -12,6 +12,7 @@
 		B7A8C84D285C147E0075222B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A8C84B285C147E0075222B /* Main.storyboard */; };
 		B7A8C84F285C14800075222B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A8C84E285C14800075222B /* Assets.xcassets */; };
 		B7A8C852285C14800075222B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A8C850285C14800075222B /* LaunchScreen.storyboard */; };
+		B7A8C869285C62F50075222B /* PLPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8C868285C62F50075222B /* PLPlayerManager.swift */; };
 		FA771890A269C604F6349540 /* Pods_RRRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2FB831668E11B934C844CA /* Pods_RRRPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		B7A8C84E285C14800075222B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A8C851285C14800075222B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A8C853285C14800075222B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A8C868285C62F50075222B /* PLPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLPlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,6 @@
 				350942B709615A8647B91957 /* Pods-RRRPlayer.debug.xcconfig */,
 				1CB517F13C4F2C1D85ABF716 /* Pods-RRRPlayer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,6 +72,7 @@
 		B7A8C844285C147E0075222B /* RRRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B7A8C85B285C2E420075222B /* Module */,
 				B7A8C859285C16D00075222B /* AppDelegate */,
 				B7A8C85A285C177E0075222B /* Resources */,
 			);
@@ -95,6 +97,46 @@
 				B7A8C84E285C14800075222B /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7A8C85B285C2E420075222B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8C85F285C2EAD0075222B /* Cache */,
+				B7A8C85E285C2E9C0075222B /* Audio */,
+				B7A8C85C285C2E4A0075222B /* Video */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B7A8C85C285C2E4A0075222B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8C860285C31490075222B /* Model */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		B7A8C85E285C2E9C0075222B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		B7A8C85F285C2EAD0075222B /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		B7A8C860285C31490075222B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8C868285C62F50075222B /* PLPlayerManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F6FEE01E568931D477526C2C /* Frameworks */ = {
@@ -239,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A8C869285C62F50075222B /* PLPlayerManager.swift in Sources */,
 				B7A8C84A285C147E0075222B /* ViewController.swift in Sources */,
 				B7A8C846285C147E0075222B /* RPAppDelegate.swift in Sources */,
 			);
